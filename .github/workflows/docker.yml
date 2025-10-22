@@ -45,7 +45,7 @@ jobs:
 
       # 6️⃣ Build da imagem Docker
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ github.repository_owner }}/biblioteca:latest .
+        run: docker build -t ghcr.io/murilosatos/biblioteca:latest .
 
       # 7️⃣ Scan de vulnerabilidades com Trivy
       - name: Scan Docker image with Trivy
@@ -57,4 +57,4 @@ jobs:
 
       # 8️⃣ Push da imagem Docker para GHCR
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository_owner }}/biblioteca:latest
+        run: docker push ghcr.io/murilosatos/biblioteca:latest
